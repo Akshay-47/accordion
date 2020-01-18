@@ -1,0 +1,28 @@
+@import "./variables";
+.accordion-item {
+  overflow: hidden;
+  .title {
+    display: flex;
+    cursor: pointer;
+    line-height: 1.5;
+    padding: 1rem;
+    background-color: $white;
+    border-bottom: 1px solid $gray;
+    &.active {
+      background-color: $gray;
+    }
+  }
+  .show-when-active {
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    &.active {
+      transition: max-height 0.5s ease-in;
+      max-height: 1000px;
+      height: auto;
+    }
+  }
+  .description {
+    border-bottom: 1px solid #ddd;
+    padding: 2em;
+  }
+}
