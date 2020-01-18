@@ -7,7 +7,7 @@ async function asyncWait(wait) {
 }
 
 const getData = async () => {
-  await asyncWait(1000);
+  await asyncWait(2000);
   return data;
 };
 
